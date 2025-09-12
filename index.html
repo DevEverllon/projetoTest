@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora MRU</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Calculadora de MRU</h1>
@@ -23,10 +26,10 @@
 
             <form id="form1">
                 <label for="deslocamento">Deslocamento (m)</label>
-                <input type="number" name="deslocamento" id="deslocamento" required>
+                <input type="number" name="deslocamento" id="deslocamento" required placeholder="Ex: 1000">
 
                 <label for="tempo">Tempo (s)</label>
-                <input type="number" name="tempo" id="tempo" required>
+                <input type="number" name="tempo" id="tempo" required placeholder="Ex: 3600">
 
                 <button type="submit">Calcular Velocidade</button>
             </form>
@@ -37,32 +40,37 @@
         </section>
 
         <!-- CONTAINER 02 == TEMPO -->
-         <section id="tab2" class="tab-content">
+        <section id="tab2" class="tab-content">
             <h2>Vamos calcular o Tempo</h2>
             <form id="form2">
                 <label for="deslocamento2">Deslocamento (m):</label>
-                <input type="number" id="deslocamento2" required>
+                <input type="number" id="deslocamento2" required placeholder="Ex: 1000">
 
                 <label for="velocidade2">Velocidade (m/s):</label>
-                <input type="number" id="velocidade2" required>
+                <input type="number" id="velocidade2" required placeholder="Ex: 30">
 
                 <button type="submit">Calcular Tempo</button>
             </form>
-         </section>
+        </section>
 
-         <!-- CONTAINER 03 == DESLOCAMENTO -->
-         <section id="tab3" class="tab-content">
+        <!-- CONTAINER 03 == DESLOCAMENTO -->
+        <section id="tab3" class="tab-content">
             <h2>Vamos calcular o Deslocamento</h2>
             <form id="form3">
                 <label for="tempo3">Tempo (s):</label>
-                <input type="number" id="tempo3" required>
+                <input type="number" id="tempo3" required placeholder="Ex: 3600">
 
                 <label for="velocidade3">Velocidade (m/s):</label>
-                <input type="number" id="velocidade3" required>
+                <input type="number" id="velocidade3" required placeholder="Ex: 30">
 
                 <button type="submit">Calcular Deslocamento</button>
             </form>
-         </section>
+        </section>
     </main>
+
+    <!-- SCRIPTS JS -->
+    <script src="scriptTabNavegacao.js"></script>
+    <script src="scriptFormCalculo.js"></script>
 </body>
+
 </html>
